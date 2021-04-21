@@ -19,6 +19,7 @@
 		91441483262D5DB30092C5BA /* AViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91441482262D5DB30092C5BA /* AViewController.m */; };
 		91441489262D60AD0092C5BA /* LGWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91441488262D60AD0092C5BA /* LGWeakProxy.m */; };
 		91441491262D85820092C5BA /* NSTimer+WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91441490262D85820092C5BA /* NSTimer+WeakTimer.m */; };
+		914414AE262EBCE50092C5BA /* BViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 914414AD262EBCE50092C5BA /* BViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		91441488262D60AD0092C5BA /* LGWeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGWeakProxy.m; sourceTree = "<group>"; };
 		9144148F262D85820092C5BA /* NSTimer+WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+WeakTimer.h"; sourceTree = "<group>"; };
 		91441490262D85820092C5BA /* NSTimer+WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+WeakTimer.m"; sourceTree = "<group>"; };
+		914414AC262EBCE50092C5BA /* BViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BViewController.h; sourceTree = "<group>"; };
+		914414AD262EBCE50092C5BA /* BViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				91441450262D597B0092C5BA /* ViewController.m */,
 				91441481262D5DB30092C5BA /* AViewController.h */,
 				91441482262D5DB30092C5BA /* AViewController.m */,
+				914414AC262EBCE50092C5BA /* BViewController.h */,
+				914414AD262EBCE50092C5BA /* BViewController.m */,
 				91441487262D60AD0092C5BA /* LGWeakProxy.h */,
 				91441488262D60AD0092C5BA /* LGWeakProxy.m */,
 				9144148F262D85820092C5BA /* NSTimer+WeakTimer.h */,
@@ -286,6 +291,7 @@
 				9144144B262D597B0092C5BA /* AppDelegate.m in Sources */,
 				91441489262D60AD0092C5BA /* LGWeakProxy.m in Sources */,
 				91441491262D85820092C5BA /* NSTimer+WeakTimer.m in Sources */,
+				914414AE262EBCE50092C5BA /* BViewController.m in Sources */,
 				9144145C262D597E0092C5BA /* main.m in Sources */,
 				9144144E262D597B0092C5BA /* SceneDelegate.m in Sources */,
 			);
