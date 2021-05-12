@@ -48,9 +48,14 @@
     @weakify(self);
     self.block = ^{
         @strongify(self);
-        NSLog(@"string:...%@, justBool:...%d", self.string, self->_justBool);
+        if (self) {
+            NSLog(@"string:...%@, justBool:...%d", self.string, self->_justBool);
+        }
     };
 }
+//!!!!: 在block内使用->访问成员变量，需要特别注意，是否存在类已经被释放，但是block仍然会走的情况，这时候如果使用->来访问成员变量，就会造成野指针，crash。或者在使用之前，先判断self是否存在,要么就干脆使用属性来访问。
+/// 为什么self释放之后，在block中使用self.来访问，不会造成crash，因为self.的本质是getter方法，它是消息机制，向nil发送消息是不会crash的。而->是指向结构体成员的运算符。用处是使用一个指向结构体或对象的指针访问其内成员。如果对象或者结构体被释放了，访问其内成员就会有问题
+/// see also: https://blog.csdn.net/qinqi376990311/article/details/79031617
 
 - (void)dealloc {
     NSLog(@"%@ 释放了", NSStringFromClass([self class]));
