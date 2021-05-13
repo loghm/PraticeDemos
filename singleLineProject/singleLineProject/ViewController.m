@@ -29,6 +29,7 @@
     // 可以通过(int)(1 * pixelScale + 1) % 2 == 0来判断是否落在奇数单元中(也就是宽度在两个像素中间)
     // see also: https://www.jianshu.com/p/d9f5e0aabcdb
     // 官方文档：https://developer.apple.com/library/archive/documentation/2DDrawing/Conceptual/DrawingPrintingiOS/GraphicsDrawingOverview/GraphicsDrawingOverview.html
+    // pt和px的区别可以参考：https://www.jianshu.com/p/551bc62f1c8d
     
     UIView* vw1 = [[UIView alloc] initWithFrame:CGRectMake(20.500000, 200.500000, 80.000000, 40.00000)];
     [vw1.layer setBorderColor:[UIColor greenColor].CGColor];
